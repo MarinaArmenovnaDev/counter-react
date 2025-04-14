@@ -21,6 +21,7 @@ body {
 
 .container {
     max-width: 300px;
+    min-width: 300px;
     width: 100%;
     margin: 0 auto;
     padding: 10px;
@@ -36,6 +37,11 @@ body {
     border-radius: 10px;
     padding: 15px;
     flex-grow: 1;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .settingValue {
@@ -48,6 +54,24 @@ body {
 
 .settingValue:last-child {
     margin-bottom: 0;
+}
+
+.error-message {
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.info-message {
+    color: #fffefe;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.settingInput.error {
+    background-color: #ffcccc;
 }
 
 .settingInput {
@@ -67,7 +91,7 @@ body {
     border: none;
     background-color: transparent;
     text-align: center;
-    height: 100%;
+    height: 60px;
     color: #00f1ff;
     font-size: 3rem;
     width: 100%;
@@ -86,16 +110,13 @@ body {
     border: 1px solid #00f1ff;
 }
 
-
 .btn {
-
     width: max-content;
     background-color: #00f1ff;
     border: 1px solid #00f1ff;
     border-radius: 3px;
     padding: 0 10px;
     cursor: pointer;
-
 }
 
 .btn:disabled {
